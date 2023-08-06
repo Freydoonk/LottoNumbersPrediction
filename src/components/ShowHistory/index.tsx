@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import lotteryDrawInfo from "../../library/lotteryDrawInfo";
-import BackMenu from "../BackMenu/BackMenu";
+import BackMenu from "../BackMenu";
 import StyledTable from "../StyledTable";
 
 interface Props {

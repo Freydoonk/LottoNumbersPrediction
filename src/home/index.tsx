@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import BackMenu from '../components/BackMenu/BackMenu';
+import BackMenu from '../components/BackMenu';
 import ShowAnalyzes from '../components/ShowAnalyzes';
 import ShowHistory from '../components/ShowHistory';
 import lotteryDrawInfo from '../library/lotteryDrawInfo';

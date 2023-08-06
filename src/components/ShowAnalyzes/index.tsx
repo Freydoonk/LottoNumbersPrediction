@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import lotteryDrawInfo from '../../library/lotteryDrawInfo';
 import { countDistributedSets } from '../../library/lotterySuggest';
-import BackMenu from '../BackMenu/BackMenu';
+import BackMenu from '../BackMenu';
 import StyledTable from '../StyledTable';
 
 interface Props {
@@ -19,7 +19,7 @@ function ShowAnalyzes({ data }: Props) {
 
     return (
         <Row className="justify-content-center mt-5">
-            <Col md={8}>
+            <Col md={5}>
                 <h1 className="text-center">Show Analyze</h1>
                 <BackMenu />
 
