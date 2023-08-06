@@ -1,11 +1,13 @@
-# Getting Started with Create React App
+# Lotto Numbers Prediction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is designed to provide suggestions for National Lottery Lotto 
+ numbers. The app takes data related to past lottery draws, analyzes the numbers that have appeared frequently, and suggests potential numbers for future draws based on patterns or trends in past data.
 
-## Available Scripts
+The app uses various algorithms or statistical methods to determine which numbers are more likely to be drawn in the future. It could offer different types of suggestions, such as global suggestions that consider the overall frequency of numbers across all lottery draws or suggestions specific to each lottery machine.
 
-In the project directory, you can run:
+Users of the app could input or retrieve data related to previous lottery draws, and the app would use that data to generate the suggested numbers. This way, the app aims to assist users in making more informed decisions when choosing their lottery numbers, potentially increasing their chances of winning.
 
+## How to run the project
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -13,11 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,18 +26,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
