@@ -68,11 +68,12 @@ const Home: React.FC = () => {
         <Container className='container-fluid'>
             <Router>
                 <Navbar bg="dark" variant="dark" className='mt-4'>
-                    <Navbar.Brand href="/">Lottery App</Navbar.Brand>
+                    <Navbar.Brand href="/">Lotto Prediction</Navbar.Brand>
                 </Navbar>
                 <div className="py-4">
                     <Routes>
                         <Route path="/" element={<Menu />} />
+                        <Route path="/LottoNumbersPrediction" element={<Menu />} />
                         <Route path="/show-history" element={<ShowHistory data={data} />} />
                         <Route path="/show-suggestion" element={<ShowSuggestion />} />
                         <Route path="/show-analyze" element={<ShowAnalyzes data={data} />} />
