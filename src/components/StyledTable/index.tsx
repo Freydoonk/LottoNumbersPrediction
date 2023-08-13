@@ -1,3 +1,4 @@
+import { Table } from "react-bootstrap";
 
 interface Props {
     columnNames: Array<string>,
@@ -8,7 +9,7 @@ interface Props {
 const StyledTable = ({ columnNames, captions, data }: Props) => {
     return (
         <div className="table-responsive mt-3">
-            <table className="table table-striped table-bordered table-hover table-dark">
+            <Table striped bordered hover responsive variant="dark">
                 <thead>
                     <tr>
                         {[...(captions || []), ...columnNames]
@@ -29,7 +30,7 @@ const StyledTable = ({ columnNames, captions, data }: Props) => {
                         </tr>
                     ))}
                 </tbody>
-            </table>
+            </Table>
         </div>
     );
 };

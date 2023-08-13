@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import styles from './Styles.module.css';
+import styles from './Styles.module.scss';
 import logo from '../logo.svg';
 
 const PageLayout = () => {

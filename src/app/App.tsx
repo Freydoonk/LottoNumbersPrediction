@@ -1,9 +1,8 @@
-import { RouterProvider } from 'react-router-dom';
-import { router } from '../router/router';
-import './App.css';
+import { RouterProvider } from "react-router-dom";
+import { router } from "../router/router";
 
 // Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../scss/customBootstrap.scss";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 

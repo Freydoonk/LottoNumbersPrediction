@@ -1,0 +1,15 @@
+// // Required
+// @import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+// @import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+[data-bs-theme=dark] {
+    --bs-body-bg: #323234;
+    --bs-border-width: 1.3px;
+    
+    .table-dark {
+        --bs-table-border-color: rgb(86, 93, 100);
+    }
+}
