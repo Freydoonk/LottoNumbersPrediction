@@ -1,9 +1,8 @@
-import { ReactHTMLElement, useCallback, useEffect } from 'react';
-import { Col, Container, Nav, Row } from 'react-bootstrap';
+import { useEffect } from 'react';
+import { Col, Nav, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { fetchLotteryData } from '../library/lotterySuggest';
-import { fetchLottoData, setLottoData } from '../store/lottoDataSlice';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { fetchLottoData } from '../store/lottoDataSlice';
 
 
 const MainPage = () => {
