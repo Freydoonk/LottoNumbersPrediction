@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import styles from './Styles.module.css';
+import logo from '../logo.svg';
 
 const PageLayout = () => {
   return (
@@ -8,11 +9,8 @@ const PageLayout = () => {
       <Navbar bg="dark" data-bs-theme="dark" className='mt-2' sticky="top">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <img
-              alt="Logo"
-              src="/logo192.png"
-              className={`d-inline-block align-top ${styles.appLogo}`}
-            />{' '}
+            <img alt="Logo" src={logo} className={`d-inline-block align-top ${styles.appLogo}`} />
+            {' '}
             Lotto Prediction
           </Navbar.Brand>
           <Nav className="me-auto">
