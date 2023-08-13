@@ -1,0 +1,29 @@
+.page {
+  text-align: center;
+  background-color: #414650;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+    justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a {
+  color: #61dafb;
+}
+
+.logo {
+  vertical-align: top;
+}
+
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

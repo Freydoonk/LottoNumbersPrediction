@@ -1,21 +1,18 @@
 import { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import lotteryDrawInfo from '../../library/lotteryDrawInfo';
 import { countDistributedSets } from '../../library/lotterySuggest';
+import { useAppSelector } from '../../store/hooks';
 import BackMenu from '../BackMenu';
 import StyledTable from '../StyledTable';
 
-interface Props {
-    data: Array<lotteryDrawInfo>
-};
-
-function ShowAnalyzes({ data }: Props) {
+function ShowAnalyzes() {
     const [analyzes, setAnalyzes] = useState<Array<Array<string | number | Date>>>([]);
+    const lottoData = useAppSelector(state => state.lottoData.value);
 
     useEffect(() => {
-        const result = countDistributedSets(data);
+        const result = countDistributedSets(lottoData);
         setAnalyzes(result);
-    }, [data]);
+    }, [lottoData]);
 
     return (
         <Row className="justify-content-center mt-5">
