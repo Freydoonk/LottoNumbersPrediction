@@ -1,6 +1,6 @@
 export default interface lotteryDrawInfo {
     No: number,
-    Date: Date,
+    Date: string,
     N1: number,
     N2: number,
     N3: number,

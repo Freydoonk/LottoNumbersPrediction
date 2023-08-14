@@ -8,8 +8,14 @@
 [data-bs-theme=dark] {
     --bs-body-bg: #323234;
     --bs-border-width: 1.3px;
-    
+    --bs-body-font-size: 1rem;
+
     .table-dark {
         --bs-table-border-color: rgb(86, 93, 100);
     }
+}
+
+.sticky-header {
+    position: sticky;
+    top: 55px;
 }
