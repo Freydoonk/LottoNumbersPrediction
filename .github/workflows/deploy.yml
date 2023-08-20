@@ -30,6 +30,14 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./build
+      - name: make dotenv file
+        uses: SpicyPizza/create-envfile@v2.0
+        with:
+          envkey_REACT_APP_PUBLIC_URL:  ${{ secrets.PUBLIC_URL }}
+          envkey_REACT_APP_API_URL:  ${{ secrets.API_URL }}
+          file_name: .env
+          fail_on_empty: false
+          sort_keys: false
       - name: deploy to github pages
         id: deployment
         uses: actions/deploy-pages@v1
