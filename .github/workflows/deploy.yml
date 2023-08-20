@@ -33,8 +33,8 @@ jobs:
       - name: make dotenv file
         uses: SpicyPizza/create-envfile@v2.0
         with:
-          envkey_REACT_APP_PUBLIC_URL:  ${{ secrets.PUBLIC_URL }}
-          envkey_REACT_APP_API_URL:  ${{ secrets.API_URL }}
+          envkey_REACT_APP_PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
+          envkey_REACT_APP_API_URL: ${{ secrets.API_URL }}
           file_name: .env
           fail_on_empty: false
           sort_keys: false
