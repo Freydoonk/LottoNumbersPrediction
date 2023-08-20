@@ -35,6 +35,7 @@ jobs:
         with:
           envkey_REACT_APP_PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
           envkey_REACT_APP_API_URL: ${{ secrets.API_URL }}
+          directory:
           file_name: .env
           fail_on_empty: false
           sort_keys: false
